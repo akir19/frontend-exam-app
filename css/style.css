@@ -1,0 +1,44 @@
+body {
+  background: #000;
+  color: #00ff9c;
+  font-family: monospace;
+  padding: 40px;
+}
+
+#app {
+  max-width: 600px;
+}
+
+h1 {
+  border-bottom: 1px solid #00ff9c;
+  padding-bottom: 10px;
+}
+
+#cardList div {
+  padding: 6px 0;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #00ff9c;
+  color: #00ff9c;
+  padding: 6px 12px;
+  margin-right: 8px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+button:hover {
+  background: #00ff9c;
+  color: #000;
+}
+
+.stats {
+  margin: 12px 0;
+  font-size: 14px;
+  opacity: 0.8;
+}

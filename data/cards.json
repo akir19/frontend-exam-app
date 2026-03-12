@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "question": "Что такое async/await?",
+    "answer": "Синтаксический сахар над Promise",
+    "code": "async function load(){ const data = await fetch('/api') }"
+  },
+  {
+    "id": 2,
+    "question": "Что такое Event Loop?",
+    "answer": "Механизм выполнения асинхронных задач в JavaScript"
+  }
+]
