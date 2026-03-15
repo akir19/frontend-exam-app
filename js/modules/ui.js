@@ -15,3 +15,22 @@ export function renderCards(cards) {
   })
 
 }
+
+export function addCard(cards, updateUI) {
+
+  const question = prompt("Enter question")
+
+  if (!question) return
+
+  const answer = prompt("Enter answer")
+
+  if (!answer) return
+
+  cards.push({
+    question,
+    answer
+  })
+
+  updateUI()
+
+}
