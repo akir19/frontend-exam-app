@@ -1,16 +1,27 @@
-export function renderCards(cards) {
+export function renderCards(cards, updateUI) {
 
-  const list = document.getElementById("cardList")
+  const container = document.getElementById("cardList")
 
-  list.innerHTML = ""
+  container.innerHTML = ""
 
   cards.forEach((card, index) => {
 
     const div = document.createElement("div")
 
-    div.textContent = `${index + 1}. ${card.question}`
+    div.className = "card"
 
-    list.appendChild(div)
+    div.innerHTML = `
+      <span>${card.question}</span>
+      <button class="deleteBtn">Delete</button>
+    `
+
+    div
+      .querySelector(".deleteBtn")
+      .addEventListener("click", () => {
+        deleteCard(cards, index, updateUI)
+      })
+
+    container.appendChild(div)
 
   })
 
@@ -30,6 +41,14 @@ export function addCard(cards, updateUI) {
     question,
     answer
   })
+
+  updateUI()
+
+}
+
+function deleteCard(cards, index, updateUI) {
+
+  cards.splice(index, 1)
 
   updateUI()
 

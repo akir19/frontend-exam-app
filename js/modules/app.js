@@ -1,13 +1,12 @@
 import { loadCards } from "./cards.js"
-import { renderCards } from "./ui.js"
-import { addCard } from "./ui.js"
+import { renderCards, addCard } from "./ui.js"
 import { startExam } from "./exam.js"
 
 export async function initApp() {
 
   const cards = await loadCards()
 
-  const updateUI = () => renderCards(cards)
+  const updateUI = () => renderCards(cards, updateUI)
 
   updateUI()
 
