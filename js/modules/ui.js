@@ -12,8 +12,14 @@ export function renderCards(cards, updateUI) {
 
     div.innerHTML = `
       <span>${card.question}</span>
+      <button class="editBtn">Edit</button>
       <button class="deleteBtn">Delete</button>
     `
+    div
+      .querySelector(".editBtn")
+      .addEventListener("click", () => {
+        editCard(cards, index, updateUI)
+      })
 
     div
       .querySelector(".deleteBtn")
@@ -49,6 +55,25 @@ export function addCard(cards, updateUI) {
 function deleteCard(cards, index, updateUI) {
 
   cards.splice(index, 1)
+
+  updateUI()
+
+}
+
+function editCard(cards, index, updateUI) {
+
+  const question = prompt("Edit question", cards[index].question)
+
+  if (!question) return
+
+  const answer = prompt("Edit answer", cards[index].answer)
+
+  if (!answer) return
+
+  cards[index] = {
+    question,
+    answer
+  }
 
   updateUI()
 

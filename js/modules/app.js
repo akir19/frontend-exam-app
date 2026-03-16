@@ -2,11 +2,22 @@ import { loadCards } from "./cards.js"
 import { renderCards, addCard } from "./ui.js"
 import { startExam } from "./exam.js"
 
+function saveCards(cards) {
+  localStorage.setItem("frontendCards", JSON.stringify(cards))
+}
+
 export async function initApp() {
 
-  const cards = await loadCards()
+  let cards = JSON.parse(localStorage.getItem("frontendCards"))
 
-  const updateUI = () => renderCards(cards, updateUI)
+  if (!cards) {
+    cards = await loadCards()
+  }
+
+  const updateUI = () => {
+    renderCards(cards, updateUI)
+    saveCards(cards)
+  }
 
   updateUI()
 
