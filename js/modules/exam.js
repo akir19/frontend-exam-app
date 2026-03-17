@@ -1,28 +1,20 @@
-
 let cards = []
 let currentIndex = 0
-
 let correct = 0
 let wrong = 0
 
 export function startExam(cardsData) {
-
   cards = shuffle(cardsData)
   currentIndex = 0
-
   correct = 0
   wrong = 0
 
   showQuestion()
-
 }
 
 function showQuestion() {
-
   const container = document.getElementById("examContainer")
-
   const card = cards[currentIndex]
-
   container.innerHTML = `
   
   <h2>Question</h2>
@@ -39,23 +31,17 @@ function showQuestion() {
   <button id="exitBtn">Exit</button>
 
   `
-
   document
     .getElementById("showAnswerBtn")
     .addEventListener("click", showAnswer)
-
   document
     .getElementById("exitBtn")
     .addEventListener("click", exitExam)
-
 }
 
 function showAnswer() {
-
   const container = document.getElementById("examContainer")
-
   const card = cards[currentIndex]
-
   container.innerHTML = `
 
     <h2>Answer</h2>
@@ -76,19 +62,15 @@ function showAnswer() {
   document
     .getElementById("yesBtn")
     .addEventListener("click", () => {
-
       correct++
       nextCard()
-
     })
 
   document
     .getElementById("noBtn")
     .addEventListener("click", () => {
-
       wrong++
       nextCard()
-
     })
 
   document
@@ -100,11 +82,8 @@ function showAnswer() {
       currentIndex = 0
       correct = 0
       wrong = 0
-
       cards = shuffle(cards)
-
       showQuestion()
-
     })
 
 }
@@ -114,7 +93,6 @@ function nextCard() {
   currentIndex++
 
   if (currentIndex >= cards.length) {
-
     document.getElementById("examContainer").innerHTML = `
     
     <h2>Exam finished</h2>
@@ -123,33 +101,20 @@ function nextCard() {
     <p>Wrong: ${wrong}</p>
 
     `
-
     return
-
   }
-
   showQuestion()
-
 }
 
 function shuffle(array) {
-
   const arr = [...array]
-
   for (let i = arr.length - 1; i > 0; i--) {
-
     const j = Math.floor(Math.random() * (i + 1))
-
     ;[arr[i], arr[j]] = [arr[j], arr[i]]
-
   }
-
   return arr
-
 }
 
 function exitExam() {
-
   document.getElementById("examContainer").innerHTML = ""
-
 }
