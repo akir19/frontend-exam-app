@@ -58,11 +58,18 @@ function showAnswer() {
 
   container.innerHTML = `
 
-  <h2>Answer</h2>
-  <p>${card.answer}</p>
+    <h2>Answer</h2>
+    <p>${card.answer}</p>
 
-  <button id="yesBtn">Yes</button>
-  <button id="noBtn">No</button>
+    <div class="stats">
+      Correct: ${correct} |
+      Wrong: ${wrong} |
+      Remaining: ${cards.length - currentIndex}
+    </div>
+
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+    <button id="resetBtn">Reset</button>
 
   `
 
@@ -81,6 +88,22 @@ function showAnswer() {
 
       wrong++
       nextCard()
+
+    })
+
+  document
+    .getElementById("resetBtn")
+    .addEventListener("click", () => {
+
+      if (!confirm("Restart exam?")) return
+
+      currentIndex = 0
+      correct = 0
+      wrong = 0
+
+      cards = shuffle(cards)
+
+      showQuestion()
 
     })
 
