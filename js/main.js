@@ -2,23 +2,59 @@
 // STATE
 // =======================
 
-let cards = JSON.parse(localStorage.getItem("frontendCards"))
+let lists = JSON.parse(localStorage.getItem("examLists"))
 
-if (!cards) {
-  cards = [
-    { question: "async/await", answer: "Работа с асинхронным кодом" },
-    { question: "Event Loop", answer: "Механизм обработки задач в JS" },
-    { question: "Promise", answer: "Объект для асинхронных операций" }
-  ]
-  saveCards()
+if (!lists) {
+  lists = {
+    Frontend: [
+      { question: "async/await", answer: "Работа с асинхронным кодом" },
+      { question: "Event Loop", answer: "Механизм обработки задач в JS" }
+    ],
+    English: [
+      { question: "apple", answer: "яблоко" },
+      { question: "run", answer: "бежать" }
+    ]
+  }
+  saveLists()
 }
+
+let currentList = localStorage.getItem("currentList") || Object.keys(lists)[0]
+let cards = lists[currentList]
 
 // =======================
 // STORAGE
 // =======================
 
-function saveCards() {
-  localStorage.setItem("frontendCards", JSON.stringify(cards))
+function saveLists() {
+  localStorage.setItem("examLists", JSON.stringify(lists))
+}
+
+function saveCurrentList() {
+  localStorage.setItem("currentList", currentList)
+}
+
+// =======================
+// LIST SWITCH
+// =======================
+
+function renderListSelect() {
+  const select = document.getElementById("listSelect")
+  select.innerHTML = ""
+
+  Object.keys(lists).forEach(name => {
+    const option = document.createElement("option")
+    option.value = name
+    option.textContent = name
+    if (name === currentList) option.selected = true
+    select.appendChild(option)
+  })
+}
+
+document.getElementById("listSelect").onchange = (e) => {
+  currentList = e.target.value
+  cards = lists[currentList]
+  saveCurrentList()
+  updateUI()
 }
 
 // =======================
@@ -33,42 +69,59 @@ function renderCards() {
   cards.forEach((card, index) => {
 
     const div = document.createElement("div")
-    div.className = "card"
 
     div.innerHTML = `
-      <div class="card-content">
-        <strong>${card.question}</strong>
-        <div class="answer" style="display:none; margin-top:5px;">
-          ${card.answer}
-        </div>
+      <strong>${card.question}</strong>
+      <div class="answer" style="display:none;">
+        ${card.answer}
       </div>
 
-      <div class="card-buttons">
-        <button class="showBtn">Show</button>
-        <button class="editBtn">Edit</button>
-        <button class="deleteBtn">Delete</button>
-      </div>
+      <button class="showBtn">Show</button>
+      <button class="editBtn">Edit</button>
+      <button class="deleteBtn">Delete</button>
     `
 
-    // 👁 показать / скрыть ответ
     div.querySelector(".showBtn").onclick = () => {
       const answerEl = div.querySelector(".answer")
       answerEl.style.display =
         answerEl.style.display === "none" ? "block" : "none"
     }
 
-    // ✏️ edit
     div.querySelector(".editBtn").onclick = () => {
       editCard(index)
     }
 
-    // 🗑 delete
     div.querySelector(".deleteBtn").onclick = () => {
       deleteCard(index)
     }
 
     container.appendChild(div)
   })
+}
+
+function updateUI() {
+  renderListSelect()
+  renderCards()
+  saveLists()
+
+  document.getElementById("cardsCount").textContent =
+    `Total cards: ${cards.length}`
+}
+
+// =======================
+// CRUD
+// =======================
+
+function addCard() {
+
+  const question = prompt("Enter question")
+  if (!question) return
+
+  const answer = prompt("Enter answer")
+  if (!answer) return
+
+  cards.push({ question, answer })
+  updateUI()
 }
 
 function editCard(index) {
@@ -81,35 +134,15 @@ function editCard(index) {
 
   cards[index] = {
     question: newQuestion,
-    answer: newAnswer.replace(/\\n/g, '\n')
+    answer: newAnswer
   }
 
-  updateUI()
-}
-
-function addCard() {
-
-  const question = prompt("Enter question")
-  if (!question) return
-
-  const answer = prompt("Enter answer").replace(/\\n/g, '\n')
-  if (!answer) return
-
-  cards.push({ question, answer })
   updateUI()
 }
 
 function deleteCard(index) {
   cards.splice(index, 1)
   updateUI()
-}
-
-function updateUI() {
-  renderCards()
-  saveCards()
-
-  document.getElementById("cardsCount").textContent =
-    `Total cards: ${cards.length}`
 }
 
 // =======================
@@ -218,16 +251,25 @@ function shuffle(array) {
 
 document.getElementById("importBtn").onclick = () => {
 
-  const json = prompt("Paste your JSON here")
+  const json = prompt("Paste JSON here")
   if (!json) return
 
   try {
     const data = JSON.parse(json)
-    cards = data
-    saveCards()
+
+    // 🔽 ожидаем объект списков
+    if (typeof data !== "object") throw new Error()
+
+    lists = data
+    currentList = Object.keys(lists)[0]
+    cards = lists[currentList]
+
+    saveLists()
+    saveCurrentList()
     updateUI()
+
   } catch {
-    alert("Invalid JSON")
+    alert("Invalid JSON format")
   }
 }
 
