@@ -3,10 +3,25 @@ body {
   color: #00ff9c;
   font-family: monospace;
   padding: 40px;
+  font-size: 18px;
 }
 
 #app {
   max-width: 600px;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+  #app {
+    max-width: 100%;
+  }
+  button {
+    padding: 10px 14px;
+    font-size: 16px;
+  }
 }
 
 h1 {

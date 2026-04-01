@@ -108,6 +108,16 @@ function updateUI() {
     `Total cards: ${cards.length}`
 }
 
+function showCardsUI() {
+  document.getElementById("cardList").style.display = "block"
+  document.getElementById("cardsCount").style.display = "block"
+}
+
+function hideCardsUI() {
+  document.getElementById("cardList").style.display = "none"
+  document.getElementById("cardsCount").style.display = "none"
+}
+
 // =======================
 // CRUD
 // =======================
@@ -156,6 +166,8 @@ let wrong = 0
 
 function startExam() {
 
+  hideCardsUI()
+
   examCards = shuffle([...cards])
   currentIndex = 0
   correct = 0
@@ -171,9 +183,11 @@ function showQuestion() {
 
   container.innerHTML = `
     <h2>Question</h2>
-    <p>${card.question}</p>
+    <p id="questionText">${card.question}</p>
 
     <button id="showAnswerBtn">Show Answer</button>
+
+    <div id="answerBlock" style="margin-top:10px;"></div>
 
     <div class="stats">
       Correct: ${correct} |
@@ -190,11 +204,11 @@ function showQuestion() {
 
 function showAnswer() {
 
-  const container = document.getElementById("examContainer")
   const card = examCards[currentIndex]
+  const answerBlock = document.getElementById("answerBlock")
 
-  container.innerHTML = `
-    <h2>Answer</h2>
+  answerBlock.innerHTML = `
+    <h3>Answer</h3>
     <p>${card.answer}</p>
 
     <button id="yesBtn">Yes</button>
@@ -218,19 +232,24 @@ function nextCard() {
 
   if (currentIndex >= examCards.length) {
 
-    document.getElementById("examContainer").innerHTML = `
-      <h2>Exam finished</h2>
-      <p>Correct: ${correct}</p>
-      <p>Wrong: ${wrong}</p>
-    `
-    return
-  }
+  document.getElementById("examContainer").innerHTML = `
+    <h2>Exam finished</h2>
+    <p>Correct: ${correct}</p>
+    <p>Wrong: ${wrong}</p>
+    <button id="finishBtn">Back</button>
+  `
+
+  document.getElementById("finishBtn").onclick = exitExam
+
+  return
+}
 
   showQuestion()
 }
 
 function exitExam() {
   document.getElementById("examContainer").innerHTML = ""
+  showCardsUI()
 }
 
 // =======================
@@ -249,28 +268,44 @@ function shuffle(array) {
 // IMPORT
 // =======================
 
+// =======================
+// IMPORT FROM FILE
+// =======================
+
+const fileInput = document.getElementById("fileInput")
+
 document.getElementById("importBtn").onclick = () => {
+  fileInput.click()
+}
 
-  const json = prompt("Paste JSON here")
-  if (!json) return
+fileInput.onchange = (event) => {
+  const file = event.target.files[0]
+  if (!file) return
 
-  try {
-    const data = JSON.parse(json)
+  const reader = new FileReader()
 
-    // 🔽 ожидаем объект списков
-    if (typeof data !== "object") throw new Error()
+  reader.onload = function(e) {
+    try {
+      const data = JSON.parse(e.target.result)
 
-    lists = data
-    currentList = Object.keys(lists)[0]
-    cards = lists[currentList]
+      if (typeof data !== "object") throw new Error()
 
-    saveLists()
-    saveCurrentList()
-    updateUI()
+      lists = data
+      currentList = Object.keys(lists)[0]
+      cards = lists[currentList]
 
-  } catch {
-    alert("Invalid JSON format")
+      saveLists()
+      saveCurrentList()
+      updateUI()
+
+      alert("Import successful!")
+
+    } catch {
+      alert("Invalid JSON file")
+    }
   }
+
+  reader.readAsText(file)
 }
 
 // =======================
