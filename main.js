@@ -343,6 +343,32 @@ fileInput.onchange = (event) => {
 }
 
 // =======================
+// CREATE NEW LIST
+// =======================
+
+document.getElementById("newListBtn").onclick = () => {
+
+  const name = prompt("Enter list name")
+  if (!name) return
+
+  if (lists[name]) {
+    alert("List already exists")
+    return
+  }
+
+  // создаём пустой список
+  lists[name] = []
+
+  // переключаемся на него
+  currentList = name
+  cards = lists[currentList]
+
+  saveLists()
+  saveCurrentList()
+  updateUI()
+}
+
+// =======================
 // INIT
 // =======================
 
