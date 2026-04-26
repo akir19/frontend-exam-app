@@ -323,8 +323,19 @@ fileInput.onchange = (event) => {
       if (typeof data !== "object") throw new Error()
 
       Object.keys(data).forEach(key => {
-        lists[key] = data[key]
+
+        let newKey = key
+
+        // если уже есть — добавляем (1), (2)...
+        let i = 1
+        while (lists[newKey]) {
+          newKey = `${key} (${i})`
+          i++
+        }
+
+        lists[newKey] = data[key]
       })
+      
       currentList = Object.keys(lists)[0]
       cards = lists[currentList]
 
@@ -366,6 +377,35 @@ document.getElementById("newListBtn").onclick = () => {
   saveLists()
   saveCurrentList()
   updateUI()
+}
+
+// =======================
+// EXPORT CURRENT LIST
+// =======================
+
+document.getElementById("exportBtn").onclick = () => {
+
+  if (!cards.length) {
+    alert("List is empty")
+    return
+  }
+
+  // создаём объект только с текущим списком
+  const data = {
+    [currentList]: cards
+  }
+
+  const json = JSON.stringify(data, null, 2)
+
+  const blob = new Blob([json], { type: "application/json" })
+  const url = URL.createObjectURL(blob)
+
+  const a = document.createElement("a")
+  a.href = url
+  a.download = `${currentList}.json`
+  a.click()
+
+  URL.revokeObjectURL(url)
 }
 
 // =======================

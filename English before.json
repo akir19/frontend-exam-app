@@ -1,0 +1,448 @@
+{
+  "English": [
+    {
+      "question": "introduce",
+      "answer": "представлять"
+    },
+    {
+      "question": "graduation",
+      "answer": "выпускной (n); окончание учебного заведения"
+    },
+    {
+      "question": "(Anna is a roommate) OF MINE.",
+      "answer": "(Анна) МОЯ (соседка по комнате)"
+    },
+    {
+      "question": "(Maria is a classmate) OF OURS",
+      "answer": "(Мария) НАША (одноклассница)"
+    },
+    {
+      "question": "curly",
+      "answer": "кудрявый (a)"
+    },
+    {
+      "question": "casual",
+      "answer": "повседневный (a)"
+    },
+    {
+      "question": "hang out",
+      "answer": "\"зависать\", проводить время вместе"
+    },
+    {
+      "question": "go out",
+      "answer": "выходить куда-нибудь (выходить наружу)"
+    },
+    {
+      "question": "outgoing",
+      "answer": "общительный"
+    },
+    {
+      "question": "bald",
+      "answer": "лысый [бо:лд]"
+    },
+    {
+      "question": "vegetarian",
+      "answer": "вегитарианец"
+    },
+    {
+      "question": "charger",
+      "answer": "зарядное устройство, зарядка [ча: же]"
+    },
+    {
+      "question": "housework",
+      "answer": "работа по дому (уборка и готовка)"
+    },
+    {
+      "question": "cleaning",
+      "answer": "уборка"
+    },
+    {
+      "question": "cooking",
+      "answer": "готовка"
+    },
+    {
+      "question": "contact",
+      "answer": "связаться, законтачить (v)"
+    },
+    {
+      "question": "Since when?",
+      "answer": "С каких это пор?"
+    },
+    {
+      "question": "Ah, so a girl is involved.",
+      "answer": "Ах, значит в этом замешена девушка."
+    },
+    {
+      "question": "It’s very cute",
+      "answer": "Очень мило."
+    },
+    {
+      "question": "crispy chicken",
+      "answer": "хрустящая курица"
+    },
+    {
+      "question": "fair",
+      "answer": "справедливый (а) [fer]"
+    },
+    {
+      "question": "That’s not fair, Grandma",
+      "answer": "Это не справедливо, бабушка"
+    },
+    {
+      "question": "heater",
+      "answer": "обогреватель"
+    },
+    {
+      "question": "accept",
+      "answer": "принимать, признавать, соглашаться (v)"
+    },
+    {
+      "question": "spill",
+      "answer": "проливать (v)"
+    },
+    {
+      "question": "celebrate",
+      "answer": "праздновать"
+    },
+    {
+      "question": "cheers",
+      "answer": "ваше здоровье! ура!  /*восклицание - выражение добрых пожеланий, когда пьёшь*/"
+    },
+    {
+      "question": "tuna",
+      "answer": "тунец  [чУна]"
+    },
+    {
+      "question": "laundry",
+      "answer": "стирка [lOndri], прачечная "
+    },
+    {
+      "question": "van",
+      "answer": "фургон [ван]"
+    },
+    {
+      "question": "container",
+      "answer": "резервуар, сосуд, контейнер [контЕйна]"
+    },
+    {
+      "question": "apply",
+      "answer": "подать заявку /*Ex: When you want a job, you have to APPLAY for it*/"
+    },
+    {
+      "question": "dust",
+      "answer": "пыль"
+    },
+    {
+      "question": "mop",
+      "answer": "швабра [мап]"
+    },
+    {
+      "question": "pick",
+      "answer": "выбирать (v) /*pick up - собирать, подбирать*/"
+    },
+    {
+      "question": "pick up",
+      "answer": "подобрать, забрать /*например, из школы*/"
+    },
+    {
+      "question": "feeling",
+      "answer": "чувство"
+    },
+    {
+      "question": "novel",
+      "answer": "роман"
+    },
+    {
+      "question": "flavor",
+      "answer": "вкус, аромат, привкус [флЭйва]"
+    },
+    {
+      "question": "clean up",
+      "answer": "убирать (v)"
+    },
+    {
+      "question": "pot",
+      "answer": "кастрюля, горшок"
+    },
+    {
+      "question": "coconut",
+      "answer": "кокос [коко нАт]"
+    },
+    {
+      "question": "rug",
+      "answer": "ковёр"
+    },
+    {
+      "question": "She MADE them CLEAN UP the house.",
+      "answer": "Она ЗАСТАВИЛА их ПРИБРАТЬСЯ в доме."
+    },
+    {
+      "question": "neat",
+      "answer": "аккуратный (а), опрятный [нит]"
+    },
+    {
+      "question": "graduation",
+      "answer": "выпускной"
+    },
+    {
+      "question": "begun",
+      "answer": "начало (v) /*started*/ начатый, начал"
+    },
+    {
+      "question": "beverage",
+      "answer": "напиток [бЕвриж]  Before my friends and I have our beverages together, we all say “Cheers!”"
+    },
+    {
+      "question": "DJ",
+      "answer": "диджей"
+    },
+    {
+      "question": "I can't GIVE UP chocolate",
+      "answer": "Я не могу ОТКАЗАТЬСЯ от шоколада"
+    },
+    {
+      "question": "I’VE GIVEN UP coffee.",
+      "answer": "Я ОТКАЗАЛСЯ от кофе."
+    },
+    {
+      "question": "She HAS GIVEN UP smoking.",
+      "answer": "Она ОТКАЗАЛАСЬ от курения."
+    },
+    {
+      "question": "Last year, he gave up tennis. But he hasn’t given up all sports",
+      "answer": "В прошлом году он бросил теннис. Но он не отказался от всех видов спорта."
+    },
+    {
+      "question": "I haven’t given up sugar yet",
+      "answer": "Я еще не отказалась от сахара"
+    },
+    {
+      "question": "dishwasher",
+      "answer": "a machine for washing dish (посудомоечная машина)"
+    },
+    {
+      "question": "icy",
+      "answer": "ледяной (covered with ice)"
+    },
+    {
+      "question": "Have you given up chocolate, too? - Yes, I don’t eat any sugar.",
+      "answer": "Вы тоже отказались от шоколада? - Да, я не ем сахар."
+    },
+    {
+      "question": "No! No that. Something impressive. Now go look around.",
+      "answer": "Нет! Это не то. Что-то впечатляющее. А теперь иди осмотрись."
+    },
+    {
+      "question": "impressive",
+      "answer": "впечатляющее"
+    },
+    {
+      "question": "look around",
+      "answer": "осмотрись"
+    },
+    {
+      "question": "Hey! I’ve been playing music all night, but you’re the first person I noticed having real fun. What’s your name?",
+      "answer": "Привет! Я всю ночь играла музыку. Но ты первый, кого я заметила, кто по-настоящему веселится. Как тебя зовут?"
+    },
+    {
+      "question": "I gave you a whole strategy, and you got her number by dancing badly?!",
+      "answer": "Я тебе целую стратегию рассказала, а ты получил её номер, плохо танцуя?!"
+    },
+    {
+      "question": "See, Bee? Giving up was the best strategy!",
+      "answer": "Видишь, Би? Сдаться было лучшей стратегией!"
+    },
+    {
+      "question": "Eddy met someone by dancing with excitement.",
+      "answer": "Эдди познакомился с кем-то, танцуя от восторга."
+    },
+    {
+      "question": "We’ve hung out ten times this week! We spend too much time together.",
+      "answer": "Мы встречались уже 10 раз на этой неделе. Мы проводим слишком много времени вместе"
+    },
+    {
+      "question": "give up",
+      "answer": "сдаться (или quit doing - прекратить делать)"
+    },
+    {
+      "question": "quit doing",
+      "answer": "прекратить делать"
+    },
+    {
+      "question": "heavily",
+      "answer": "сильно (наречие. Синоним hard)"
+    },
+    {
+      "question": "part-time",
+      "answer": "неполная занятость, подработка"
+    },
+    {
+      "question": "Maria has given up smoking. She doesn’t smoke anymore.",
+      "answer": "Мария бросила курить. Она больше не курит."
+    },
+    {
+      "question": "No thanks, I’ve given  up alcohol, so I won’t have a glass of wine, but I can still say “Cheers” with a glass of juice, right?",
+      "answer": "Нет спасибо. Я отказалась от алкоголя, поэтому я не могу поднять бокал вина. Но я всё еще могу поднять \"за здоровье!\" с бокалом сока, верно?"
+    },
+    {
+      "question": "Yes! Cheers to our class!",
+      "answer": "Да! За наш класс! (или Ура нашему классу!)"
+    },
+    {
+      "question": "Maria and I didn’t know each other in high school, but we met at last year’s school event and have hung out a lot since then.",
+      "answer": "Мария и я не были знакомы в старшей школе. Но мы познакомились на прошлогоднем сшкольном мероприятии и с тех пор много общаемся."
+    },
+    {
+      "question": "honey",
+      "answer": "милый"
+    },
+    {
+      "question": "traveling",
+      "answer": "путешествие"
+    },
+    {
+      "question": "location",
+      "answer": "местоположение"
+    },
+    {
+      "question": "reminders",
+      "answer": "напоминания"
+    },
+    {
+      "question": "I have very little time and I’m hungry, but there are very few good restaurants here.",
+      "answer": "У меня очень мало времени и я голоден. Но здесь очень мало хороших ресторанов."
+    },
+    {
+      "question": "attend",
+      "answer": "посещать"
+    },
+    {
+      "question": "delivery",
+      "answer": "доставка [делИвери]"
+    },
+    {
+      "question": "flavor",
+      "answer": "вкус"
+    },
+    {
+      "question": "meaning ",
+      "answer": "значение"
+    },
+    {
+      "question": "I’ve done ten interviews. They’ve OFFERED me two jobs. I’ve ACCEPTED one.",
+      "answer": "Я прошел 10 собеседований. Мне ПРЕДЛОЖИЛИ две должности. Я ВЫБРАЛ одну."
+    },
+    {
+      "question": "Tom has been busy since I emailed him. He hasn’t signed the documents for two weeks!",
+      "answer": "С тех пор, как я отправид ему электронное письмо, Том был занят. Он не подписал документы уже две недели!"
+    },
+    {
+      "question": "essay",
+      "answer": "эссе"
+    },
+    {
+      "question": "feeling",
+      "answer": "чувство"
+    },
+    {
+      "question": "spill",
+      "answer": "пролить"
+    },
+    {
+      "question": "similar",
+      "answer": "похожий"
+    },
+    {
+      "question": "a little sour",
+      "answer": "немного кислый"
+    },
+    {
+      "question": "quit",
+      "answer": "бросать"
+    },
+    {
+      "question": "trumpet",
+      "answer": "труба"
+    },
+    {
+      "question": "jar",
+      "answer": "банка"
+    },
+    {
+      "question": "He wasn’t playing his trumpet too loudly, was he?",
+      "answer": "Он ведь не слишком громко играл на трубе, правда?"
+    },
+    {
+      "question": "You aren’t publishing my story, are you?",
+      "answer": "Вы не издадите мою историю, не так ли?"
+    },
+    {
+      "question": "Who’s REAPONSIBLE for LOCKING the door?",
+      "answer": "Кто ОТВЕТСТВЕННЫЙ за то, чтобы ЗАПИРАТЬ дверь? (...за ЗАПИРАНИЕ...двери)"
+    },
+    {
+      "question": "What BEVERAGES do they have?",
+      "answer": "Какие НАПИТКИ у них есть?"
+    },
+    {
+      "question": "I can’t give up chocolate",
+      "answer": "Я не могу отказаться от шоколада"
+    },
+    {
+      "question": "- Do you still play basketball, Mark?  - No, I’ve given it up since last year.",
+      "answer": "- Ты всё ещё играешь в баскетбол, Марк? - Нет, я отказался от него с прошлого года."
+    },
+    {
+      "question": "It’s time to leave the house, so we need to leave now.",
+      "answer": "Пришло время уходить из дома. Поэтому нам нужно уйти прямо сейчас"
+    },
+    {
+      "question": "It’s time",
+      "answer": "Пора, (Пришло время)"
+    },
+    {
+      "question": "This present is Ben’s, right? It’s a shame that Ben couldn’t come.",
+      "answer": "Этот подарок принадлежит Бену, верно? Жаль, что Бен не смог прийти."
+    },
+    {
+      "question": "It’s time to say goodbye!",
+      "answer": "Пора прощаться!"
+    },
+    {
+      "question": "Can you give me a hug?",
+      "answer": "Разве ты не обнимешь меня? /*не проверено, что верно!*/"
+    },
+    {
+      "question": "- It’s time for me to sleep - It’s time for us to leave",
+      "answer": "- Мне пора спать - Нам пора уходить"
+    },
+    {
+      "question": "I just can’t believe it’s time for your first SLEEPOVER. You’re growing up so fast.",
+      "answer": "Я просто не могу поверить, что пришло время для твоей первой ночевки. Ты растешь так быстро."
+    },
+    {
+      "question": "sleepover",
+      "answer": "ночевка"
+    },
+    {
+      "question": "You could watch one of your movies. The ones where people kiss in the rain.",
+      "answer": "Ты мог бы посмотреть один из своих фильмов. Тот, где люди целуются под дождем."
+    },
+    {
+      "question": "Junior suggests Eddy could watch a romantic movie.",
+      "answer": "Джуниор предлагает Эдди посмотреть романтический фильм"
+    },
+    {
+      "question": "It’s not the same without you making fun of them.",
+      "answer": "Это не то же самое, если ты не смеешься над ними (Без твоих шуток все не так)"
+    },
+    {
+      "question": "I’m great, Dad! We’re having so much fun! I just called to check on you. ",
+      "answer": "У меня всё отлично, папа! Нам так весело! Я просто звонил, чтобы узнать, как у тебя дела."
+    },
+    {
+      "question": "It’s time for you to get in a car, Duo. Enough is enough.",
+      "answer": "Пора тебе садиться в машину, Дуо. Хватит уже."
+    }
+  ]
+}
