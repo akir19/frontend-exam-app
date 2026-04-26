@@ -305,14 +305,18 @@ function shuffle(array) {
 // =======================
 
 const fileInput = document.getElementById("fileInput")
+// const fileName = file.name.replace(".json", "")
 
 document.getElementById("importBtn").onclick = () => {
   fileInput.click()
 }
 
 fileInput.onchange = (event) => {
+
   const file = event.target.files[0]
   if (!file) return
+
+  const fileName = file.name.replace(".json", "")
 
   const reader = new FileReader()
 
@@ -322,21 +326,21 @@ fileInput.onchange = (event) => {
 
       if (typeof data !== "object") throw new Error()
 
-      Object.keys(data).forEach(key => {
+      // 🔥 берём ПЕРВЫЙ список из JSON
+      const firstKey = Object.keys(data)[0]
+      const importedCards = data[firstKey]
 
-        let newKey = key
+      if (!Array.isArray(importedCards)) throw new Error()
 
-        // если уже есть — добавляем (1), (2)...
-        let i = 1
-        while (lists[newKey]) {
-          newKey = `${key} (${i})`
-          i++
-        }
+      // 🔥 логика по имени файла
+      if (lists[fileName]) {
+        const confirmReplace = confirm(`List "${fileName}" already exists. Replace it?`)
+        if (!confirmReplace) return
+      }
 
-        lists[newKey] = data[key]
-      })
-      
-      currentList = Object.keys(lists)[0]
+      lists[fileName] = importedCards
+
+      currentList = fileName
       cards = lists[currentList]
 
       saveLists()
