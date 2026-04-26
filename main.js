@@ -3,6 +3,7 @@
 // =======================
 
 let lists = JSON.parse(localStorage.getItem("examLists"))
+let mistakes = []
 
 if (!lists) {
   lists = {
@@ -166,6 +167,8 @@ let wrong = 0
 
 function startExam() {
 
+  mistakes = []
+
   hideCardsUI()
 
   examCards = shuffle([...cards])
@@ -195,11 +198,13 @@ function showQuestion() {
       Remaining: ${examCards.length - currentIndex}
     </div>
 
+    <button id="mistakesBtn">Mistakes</button>
     <button id="exitBtn">Exit</button>
   `
 
   document.getElementById("showAnswerBtn").onclick = showAnswer
   document.getElementById("exitBtn").onclick = exitExam
+  document.getElementById("mistakesBtn").onclick = showMistakes
 }
 
 function showAnswer() {
@@ -222,6 +227,7 @@ function showAnswer() {
 
   document.getElementById("noBtn").onclick = () => {
     wrong++
+    mistakes.push(examCards[currentIndex])
     nextCard()
   }
 }
@@ -250,6 +256,32 @@ function nextCard() {
 function exitExam() {
   document.getElementById("examContainer").innerHTML = ""
   showCardsUI()
+}
+
+function showMistakes() {
+
+  const container = document.getElementById("examContainer")
+
+  if (mistakes.length === 0) {
+    container.innerHTML = `
+      <h2>No mistakes 🎉</h2>
+      <button id="backBtn">Back</button>
+    `
+  } else {
+    container.innerHTML = `
+      <h2>Mistakes (${mistakes.length})</h2>
+      ${mistakes.map(card => `
+        <div style="margin-bottom:10px;">
+          <strong>${card.question}</strong>
+          <div>${card.answer}</div>
+        </div>
+      `).join("")}
+
+      <button id="backBtn">Back</button>
+    `
+  }
+
+  document.getElementById("backBtn").onclick = showQuestion
 }
 
 // =======================
@@ -290,7 +322,9 @@ fileInput.onchange = (event) => {
 
       if (typeof data !== "object") throw new Error()
 
-      lists = data
+      Object.keys(data).forEach(key => {
+        lists[key] = data[key]
+      })
       currentList = Object.keys(lists)[0]
       cards = lists[currentList]
 
