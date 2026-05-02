@@ -1,0 +1,188 @@
+{
+  "English Grammar B2": [
+    {
+      "question": "Present Simple",
+      "answer": "1) ОБРАЗОВАНИЕ I/You/We They + v (I work);   He/She/It +v+s (He works).  2) ВОПРОС Do/Does she work? 3) ОТРИЦАНИЕ I don't work. She doesn't work."
+    },
+    {
+      "question": "Present Simple (Нюансы B2)",
+      "answer": "1) Глагол To be: (Am/Is/Are) - ему не нужны do/does.     2) Наречия Always, usually, often - ставятся ПЕРЕД основным глаголом (I often study), но ПОСЛЕ to be (I am often busy).     3) РАСПИСАНИЕ: используй PS для будущих событий, если это график (поезда, экзамены): The TOEFL test starts at 9 AM tomorrow."
+    },
+    {
+      "question": "Present Simple (исключения)",
+      "answer": "-y после согласной меняется на -ies (study - studies).     -sh, -ch, -s, -x добавляем -es (watch - watches).      Have превращается Has"
+    },
+    {
+      "question": "------------------------------",
+      "answer": "---"
+    },
+    {
+      "question": "предлог IN",
+      "answer": "1) ВРЕМЯ: года, месяцы, века, сезоны (in 2024, in May, in summer).     2) МЕСТО: города, страны, мир (in London, in Russia, in the world.     3) ИСКЛЮЧЕНИЯ: in the morning/afternoon/evening.)"
+    },
+    {
+      "question": "предлог ON",
+      "answer": "1) ПЛОСКИЕ ПОВЕРХНОСТИ: on the table, on the floor, on the wall     2) КОНКРЕТНЫЕ ДАТЫ И ДНИ НЕДЕЛИ: (on the 4th of July, on my birthday, on Monday)"
+    },
+    {
+      "question": "предлог AT",
+      "answer": "ТОЧНОЕ ВРЕМЯ ПО ЧАСАМ и ПРАЗДНИКИ (at 5 pm, at noon, at Christmas). ТОЧНЫЙ АДРЕС или ФУНКЦИОНАЛЬАЯ ТОЧКА (at the bus stop, at the entrance, at home). ИСКЛЮЧЕНИЕ: at night"
+    },
+    {
+      "question": "предлог BY",
+      "answer": "1) К МОМЕНТУ (дедлайн): I must finish it BY Friday (к пятнице).      2) СПОСОБ ДЕЙСТВИЯ (кем/чем): By bus, by train, by heart (это наизусть)"
+    },
+    {
+      "question": "предлог НЕ НУЖЕН",
+      "answer": "перед словами NEXT, LAST, THIS, EVERY (нельзя сказать on next Monday)"
+    },
+    {
+      "question": "предлог С ТРАНСПОРТОМ",
+      "answer": "1) BY + транспорт (без артикля): I go to work BY car (на машине).     2) IN + артикль + транспорт (in a car, in a taxi для маленького транспорта) - где нельзя встать в полный рост.       2) ON - для общественного транспорта (on a bus, on a plane, on a train)"
+    },
+    {
+      "question": "------------------------------",
+      "answer": "---"
+    },
+    {
+      "question": "Passive Voice (формула)",
+      "answer": "1) Формула: Subject (подлежащее) + to be (в нужном времени) + V3 (3-я форма глагола).          2) Исполнитель действия: Если исполнитель важен, он добавляется с помощью предлога by (например, The book was written by Hemingway), а инструмент — предлогом with."
+    },
+    {
+      "question": "PV Present Simple",
+      "answer": "am/is/are + V3\t(The room is cleaned every day.)"
+    },
+    {
+      "question": "PV Past Simple",
+      "answer": "was/were + V3\t(The letter was sent yesterday.)"
+    },
+    {
+      "question": "PV Future Simple",
+      "answer": "will be + V3\t(The work will be done tomorrow.)"
+    },
+    {
+      "question": "PV Present Continuous",
+      "answer": "am/is/are + being + V3\t(The cake is being baked now.)"
+    },
+    {
+      "question": "PV Past Continuous",
+      "answer": "was/were + being + V3\t(The car was being repaired at 5.)"
+    },
+    {
+      "question": "PV Present Perfect",
+      "answer": "have/has + been + V3\t(The report has been finished.)"
+    },
+    {
+      "question": "PV Past Perfect",
+      "answer": "had + been + V3\t(The, food had been eaten before I came.)"
+    },
+    {
+      "question": "PV Модальные глаголы",
+      "answer": "can/must/should + be + V3 (It must be done — Это должно быть сделано)."
+    },
+    {
+      "question": "PV Конструкция \"have something done\"",
+      "answer": "Означает, что действие сделано кем-то для нас (I had my hair cut — Мне подстригли волосы)."
+    },
+    {
+      "question": "------------------------------",
+      "answer": "---"
+    },
+    {
+      "question": "Условные предложения (Conditionals)",
+      "answer": "это конструкции, описывающие действия, зависящие от условия (обычно с if — если). Они делятся на 4 основных типа (0, 1, 2, 3), отличающихся по времени и вероятности (реальные/нереальные). Включают придаточную часть (условие) и главную (результат)."
+    },
+    {
+      "question": "Zero — Факты, законы природы",
+      "answer": "If + Present Simple, ... Present Simple      — (If it rains, the grass gets wet.)"
+    },
+    {
+      "question": "1st \t— Реальное будущее",
+      "answer": "If + Present Simple, ... Future Simple (will) — (If I have time, I will help you.)"
+    },
+    {
+      "question": "2nd\t— Нереальное настоящее/будущее",
+      "answer": "If + Past Simple, ... would + V1 — (If I won the lottery, I would buy a car.)"
+    },
+    {
+      "question": "3rd\t— Нереальное прошлое",
+      "answer": "If + Past Perfect, ... would have + V3 — (If I had known, I would have come.)"
+    },
+    {
+      "question": "Порядок частей:",
+      "answer": "Если if стоит в начале, ставится запятая. Если в середине — запятая не нужна (If I come, I will call = I will call if I come)."
+    },
+    {
+      "question": "Zero Conditional:",
+      "answer": "Используется для ситуаций, которые всегда верны, или общеизвестных истин."
+    },
+    {
+      "question": "1st Conditional: ",
+      "answer": "Описывает события, которые вероятно произойдут."
+    },
+    {
+      "question": "2nd Conditional:",
+      "answer": "Используется для гипотетических ситуаций в настоящем/будущем (мечты, советы). С глаголом to be часто используется форма were для всех лиц (If I were you...)."
+    },
+    {
+      "question": "3rd Conditional:",
+      "answer": " Описывает нереальные ситуации в прошлом (сожаления)."
+    },
+    {
+      "question": "Mixed Conditionals:",
+      "answer": "Смешивают типы, чаще всего 3-й и 2-й (условие в прошлом, результат в настоящем: If I had studied hard (then), I would have a degree (now))."
+    },
+    {
+      "question": "Альтернативы if",
+      "answer": "Вместо if могут использоваться:     — Unless (если не): (Unless you hurry, we will miss the bus.);      — Provided / Providing that (при условии, что);     — As long as (пока / при условии). "
+    },
+    {
+      "question": "------------------------------",
+      "answer": "---"
+    },
+    {
+      "question": "Future in the Past Passive",
+      "answer": "СУТЬ: Кто-то сказал в прошлом, что что-то будет сделано в будущем. — СХЕМА: said that + предмет + would be V3 (ed или 3-я колонка)."
+    },
+    {
+      "question": "ПРИМЕРЫ — Future in the Past Passive",
+      "answer": "[1] Секретарь сказал, что документы будут отправлены завтра. — The secretary said that documents would be sent tomorrow.     [2] Профессор сказал, что наши задания будут проверены к понедельнику. — The professor said that our assignments would be checked by Monday.      [3] Студенты сказали, что эта статья будет прочитана ими позже. — Students said that this article would be read by them later.     [4] Нам сказали, что эта лекция будет отменена. — We were told that the lecture would be cancelled.      [5] Он сказал, что это исследование будет закончено вовремя. — He said that the research would be finished in time.     [6] Она сказала, что новые правила будут представлены на следующей неделе. — She said that new rules would be presented next week."
+    },
+    {
+      "question": "------------------------------",
+      "answer": "---"
+    },
+    {
+      "question": "Сожаления о прошлом (Conditional 3)",
+      "answer": "СУТЬ: «Эх, если бы вчера произошло А, то случилось бы Б (но ничего не произошло)».  — СХЕМА: If I/she/they + had V3 (3-я колонка), I/she/they + would have V3."
+    },
+    {
+      "question": "ПРИМЕРЫ — Сожаления о прошлом (Conditional 3)",
+      "answer": "[1] Если бы я подготовился лучше, я бы сдал тот тест. — If I had prepared better, I would have passed that test.      [2] Если бы профессор объяснил тему еще раз, мы бы поняли задание лучше. — If the professor had explained the topic once again, we would have understood the assignment better.     [3] Если бы студенты прочитали статью заранее, они бы нашли ответы. — If students had read the article before, they would have found answers.     [4] Если бы я закончил свое задание вчера, я бы отдохнул вечером. — If I had finished my assignment yesterday, I would have rested in the evening.      [5] Если бы она не забыла свой ноутбук, она бы показала нам презентацию. — If she hadn't forgotten her laptop, she would have shown us the presentation.     [6] Если бы результаты были опубликованы раньше, мы бы знали правду. —  If results had been published erlier, we would have known the truth."
+    },
+    {
+      "question": "------------------------------",
+      "answer": "---"
+    },
+    {
+      "question": "Passive Voice + Sequence of Tenses",
+      "answer": "СУТЬ: мы в прошлом сообщаем, что что-то уже было сделано к тому моменту. Это часто встречается в секциях Reading и Listening. — СХЕМА: Subject + said that + Object + had been V3. (Например: Он сказал, что задание уже было проверено)."
+    },
+    {
+      "question": "ПРИМЕРЫ — Passive Voice + Sequence of Tenses",
+      "answer": "[1] Профессор сказал, что исследование было завершено — The professor said that the research had been finished.     [2] Студенты сказали, что статья была прочитана ими на прошлой неделе. — Students said that the article had been read by them last week.     [3] Наставник сказал, что это задание было выполнено успешно. — The mentor said that the assignment had been carried out successfully.     [4] Она сказала мне, что презентация была показана директору. —  She told me that the presentation had been shown to the director.     [5] Лектор подчеркнул, что данные были проанализированы. — The lecturer underlined that the data had been analyzed.     [6] Он сказал, что ноутбук был найден — He said that the laptop had been found."
+    },
+    {
+      "question": "------------------------------",
+      "answer": "---"
+    },
+    {
+      "question": "Гипотезы в настоящем (Conditional 2)",
+      "answer": "СУТЬ: Мы говорим о том, что было бы сейчас, если бы ситуация была другой. «Если бы я был... / Если бы у меня было...».     — СХЕМА: If + V2 (или were), would + V1."
+    },
+    {
+      "question": "ПРИМЕРЫ — Гипотезы в настоящем (Conditional 2)",
+      "answer": "[1] Если бы я был тобой, я бы прочитал эту статью. — If I were you, I I would read that article.     [2] Если бы у нас было больше времени, мы бы закончили это задание — If we had more time, we would finish the assignment.     [3] Профессор был бы счастлив, если бы студенты готовились к лекциям. — The professor would be happy if students prepared for lectures.     [4] Если бы эта информация была доступна, мы бы использовали её. — If that information were accessible, we would use it.     [5] Я бы купил новый ноутбук, если бы у меня были деньги — I would buy a new laptop if I had money.     [6] Если бы ты знал ответ, ты бы сказал мне? — If you knew the answer, would you tell me?"
+    }
+  ]
+}

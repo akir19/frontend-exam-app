@@ -242,10 +242,13 @@ function nextCard() {
     <h2>Exam finished</h2>
     <p>Correct: ${correct}</p>
     <p>Wrong: ${wrong}</p>
+
+    <button id="mistakesBtn">Mistakes</button>
     <button id="finishBtn">Back</button>
   `
 
   document.getElementById("finishBtn").onclick = exitExam
+  document.getElementById("mistakesBtn").onclick = showMistakes
 
   return
 }
@@ -281,7 +284,15 @@ function showMistakes() {
     `
   }
 
-  document.getElementById("backBtn").onclick = showQuestion
+  document.getElementById("backBtn").onclick = () => {
+
+    if (currentIndex >= examCards.length) {
+      // экзамен завершён → возвращаемся в финальный экран
+      nextCard()
+    } else {
+      showQuestion()
+    }
+  }
 }
 
 // =======================

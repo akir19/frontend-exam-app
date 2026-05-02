@@ -443,6 +443,154 @@
     {
       "question": "It’s time for you to get in a car, Duo. Enough is enough.",
       "answer": "Пора тебе садиться в машину, Дуо. Хватит уже."
+    },
+    {
+      "question": "====================",
+      "answer": "=========="
+    },
+    {
+      "question": "гипотеза ",
+      "answer": "hypothesis [хай пО тхесес]"
+    },
+    {
+      "question": "доказывать ",
+      "answer": "prove, proved, proven"
+    },
+    {
+      "question": "собирать (данные)",
+      "answer": "collect"
+    },
+    {
+      "question": "научный журнал",
+      "answer": "scientific journal"
+    },
+    {
+      "question": "во всем мире",
+      "answer": "all over the world"
+    },
+    {
+      "question": "Его нельзя трогать.",
+      "answer": "It mustn't be touched. — Тут нужен пассив: «Его нельзя трогать» (К нему нельзя прикасаться). Добавляем be + 3-ю форму глагола."
+    },
+    {
+      "question": "Его не приходится/нет необходимости трогать",
+      "answer": "It doesn't have to touch."
+    },
+    {
+      "question": "восхищаться",
+      "answer": "admire"
+    },
+    {
+      "question": "все восхищались им",
+      "answer": "everyone admired him"
+    },
+    {
+      "question": "в ближайшем будущем",
+      "answer": "in the near future (устойчивое выражение)"
+    },
+    {
+      "question": "Research - исчисляемое ?",
+      "answer": " research — неисчисляемое, поэтому всегда is (а не are)."
+    },
+    {
+      "question": "высоко/сильно",
+      "answer": "greatly — Наречие от high (высоко/сильно)"
+    },
+    {
+      "question": "заявление",
+      "answer": "statement [стЕЙтмент]"
+    },
+    {
+      "question": "человечество",
+      "answer": "humanity [хью мАнити]"
+    },
+    {
+      "question": "покорение планеты",
+      "answer": "conquest of the planet [кОнквест оф зе плАнет]"
+    },
+    {
+      "question": "исследования Космоса",
+      "answer": "space exploration"
+    },
+    {
+      "question": "космические полеты",
+      "answer": "space flights"
+    },
+    {
+      "question": "риски сильно возрасли",
+      "answer": "risks have greatly increased"
+    },
+    {
+      "question": "подход/метод",
+      "answer": "Approach "
+    },
+    {
+      "question": "проводить",
+      "answer": "Conduct (проводить — синоним carry out, звучит круче в эссе)"
+    },
+    {
+      "question": "оценивать результаты",
+      "answer": "Evaluate "
+    },
+    {
+      "question": "вид/виды",
+      "answer": "Species [спИшиз] — вид/виды (и ед. и мн. число пишется одинаково)"
+    },
+    {
+      "question": "вымирающий",
+      "answer": "Endangered [индейнджерд] "
+    },
+    {
+      "question": " окружающая среда",
+      "answer": "Environment [инвайронмент] "
+    },
+    {
+      "question": "защищать",
+      "answer": "Protect (защищать) / Protection (защита)"
+    },
+    {
+      "question": "выбрасывать (мусор)",
+      "answer": "Throw out"
+    },
+    {
+      "question": "выбрасываются на берег (киты)",
+      "answer": "Whales ARE  BEING WASHED UP on the shore (Continuous Passive)"
+    },
+    {
+      "question": "это заставило меня задуматься",
+      "answer": "It made me think"
+    },
+    {
+      "question": "уникальные существа",
+      "answer": " unique creatures [юнИк крИчес]"
+    },
+    {
+      "question": "Это навело меня на мысль, как много уникальных существ на земле.",
+      "answer": "This made me think about how many unique creatures exist on Earth."
+    },
+    {
+      "question": "жизненно важный, жизненный, существенный",
+      "answer": "vital  [вАЙтл]"
+    },
+    {
+      "question": "Если человечество будет беречь и защищать животных, то оно само станет лучше.",
+      "answer": "If humanity protects and saves animals, then humanity will become better."
+    },
+    {
+      "question": "Для нашей цивилизации это мост в будущее.",
+      "answer": "For our civilization, it is a bridge to the future."
+    },
+    {
+      "question": "на берегу",
+      "answer": "on the shore"
+    },
+    {
+      "question": "почти невозможно",
+      "answer": "nearly impossible"
+    },
+    {
+      "question": "когда-то давно",
+      "answer": "once upon a time"
     }
   ]
 }
