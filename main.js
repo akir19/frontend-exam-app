@@ -244,11 +244,13 @@ function nextCard() {
     <p>Wrong: ${wrong}</p>
 
     <button id="mistakesBtn">Mistakes</button>
+    <button id="retryBtn">Retry mistakes</button>
     <button id="finishBtn">Back</button>
   `
 
   document.getElementById("finishBtn").onclick = exitExam
   document.getElementById("mistakesBtn").onclick = showMistakes
+  document.getElementById("retryBtn").onclick = retryMistakes
 
   return
 }
@@ -421,6 +423,26 @@ document.getElementById("exportBtn").onclick = () => {
   a.click()
 
   URL.revokeObjectURL(url)
+}
+
+// =======================
+// RETRY MISTAKES
+// =======================
+
+function retryMistakes() {
+
+  if (!mistakes.length) {
+    alert("No mistakes to retry 🎉")
+    return
+  }
+
+  examCards = shuffle([...mistakes])
+  currentIndex = 0
+  correct = 0
+  wrong = 0
+  mistakes = []
+
+  showQuestion()
 }
 
 // =======================
